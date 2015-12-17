@@ -91,7 +91,7 @@ BOOL CDlgViewerSetOrder::PreTranslateMessage(MSG* pMsg)
 	{
 		return TRUE; 
 
-		return FALSE;   
+		return FALSE;            
 	}
 	return CDialogEx::PreTranslateMessage(pMsg);
 }
