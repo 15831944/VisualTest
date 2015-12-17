@@ -90,6 +90,8 @@ BOOL CDlgViewerSetOrder::PreTranslateMessage(MSG* pMsg)
 	if (pMsg->wParam == VK_RETURN || pMsg->wParam == VK_ESCAPE)           
 	{
 		return TRUE; 
+
+		return FALSE;
 	}
 	return CDialogEx::PreTranslateMessage(pMsg);
 }
