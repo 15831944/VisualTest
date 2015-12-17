@@ -85,10 +85,10 @@ BOOL CDlgViewerSet::OnInitDialog()
 BOOL CDlgViewerSet::OnEraseBkgnd(CDC* pDC)
 {
 	CRect rt;
-    GetClientRect(&rt);  // Å¬¶óÀÌ¾ðÆ® ¿µ¿ªÀÇ Å©±â °è»ê
-	pDC->FillSolidRect(&rt, RGB(41, 56, 82));  // Å¬¶óÀÌ¾ðÆ® ¿µ¿ª Å©±â¸¸Å­ Èò»öÀ¸·Î Ã¤¿î´Ù
+    GetClientRect(&rt);  // í´ë¼ì´ì–¸íŠ¸ ì˜ì—­ì˜ í¬ê¸° ê³„ì‚°
+	pDC->FillSolidRect(&rt, RGB(41, 56, 82));  // í´ë¼ì´ì–¸íŠ¸ ì˜ì—­ í¬ê¸°ë§Œí¼ í°ìƒ‰ìœ¼ë¡œ ì±„ìš´ë‹¤
   
-    return TRUE;  // »óÀ§ Å¬·¡½ºÀÇ OnEraseBkgnd ÇÔ¼ö¸¦ È£ÃâÇÏÁö ¾Ê¾Æ¾ß ¹Ù²Û ¹è°æ»öÀÌ Àû¿ëµÈ´Ù
+    return TRUE;  // ìƒìœ„ í´ëž˜ìŠ¤ì˜ OnEraseBkgnd í•¨ìˆ˜ë¥¼ í˜¸ì¶œí•˜ì§€ ì•Šì•„ì•¼ ë°”ê¾¼ ë°°ê²½ìƒ‰ì´ ì ìš©ëœë‹¤
 }
 
 
@@ -243,7 +243,7 @@ void CDlgViewerSet::ModifyHideDlg()
 
 	SelectSetDlg(_SET_SECTOR);
 
-	pDlg->m_dlgViewerSet.m_dlgSector.ShowControl(FALSE);
+	pDlg->m_dlgViewerSet.m_dlgSector.ShowControl(FASE);
 	pDlg->m_dlgViewerSet.m_dlgORG.ShowControl(FALSE);
 	pDlg->m_dlgViewerSet.m_dlgOrder.ShowControl(FALSE);
 	pDlg->m_dlgViewerSet.m_dlgPattern.ShowControl(FALSE);
